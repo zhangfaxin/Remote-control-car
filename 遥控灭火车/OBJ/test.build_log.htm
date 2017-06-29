@@ -1,0 +1,134 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.12.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 123 123, 123, LIC=QB445-GVGHV-N5WTH-W2LEG-X4RUC-LKSJL
+ 
+Tool Versions:
+Toolchain:       *** Unknown Product ***  Version: 5.12.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 (build 41)
+Assembler:       Armasm.exe V5.05 (build 41)
+Linker/Locator:  ArmLink.exe V5.05 (build 41)
+Library Manager: ArmAr.exe V5.05 (build 41)
+Hex Converter:   FromElf.exe V5.05 (build 41)
+CPU DLL:         SARMCM3.DLL V5.12.0.0
+Dialog DLL:      DARMSTM.DLL V1.65.0.0
+    Target DLL: Segger\JL2CM3.dll
+Dialog DLL:      TARMSTM.DLL V1.64.0.0
+ 
+<h2>Project:</h2>
+C:\Users\松磊\Desktop\遥控灭火车\USER\test.uvprojx
+Project File Date:  12/15/2016
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling PID.c...
+PORT.h(26): warning:  #47-D: incompatible redefinition of macro "G2" (declared at line 21 of "..\HARDWARE\KEY\key.h")
+  #define G2   PAin(4)
+PORT.h(27): warning:  #47-D: incompatible redefinition of macro "G3" (declared at line 22 of "..\HARDWARE\KEY\key.h")
+  #define G3   PAin(3)
+PORT.h(28): warning:  #1295-D: Deprecated declaration Right90 - give arg types
+  extern void Right90();
+PORT.h(29): warning:  #1295-D: Deprecated declaration Left90 - give arg types
+  extern void Left90();
+PORT.h(30): warning:  #1295-D: Deprecated declaration Turn_Fan - give arg types
+  extern void Turn_Fan();
+PORT.h(31): warning:  #1295-D: Deprecated declaration G_Init - give arg types
+  extern void G_Init();
+PORT.h(32): warning:  #1295-D: Deprecated declaration K_Init - give arg types
+  extern void K_Init();
+PORT.h(34): warning:  #1295-D: Deprecated declaration MiddleS_Init - give arg types
+  extern void MiddleS_Init();
+function.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+function.h(11): warning:  #1295-D: Deprecated declaration init - give arg types
+  extern void init();
+function.h(12): warning:  #1295-D: Deprecated declaration MotorInit - give arg types
+  extern void MotorInit();
+function.h(14): warning:  #1295-D: Deprecated declaration Search - give arg types
+  extern void Search();//寻路
+function.h(16): warning:  #1295-D: Deprecated declaration Find_L - give arg types
+  extern void Find_L();
+function.h(17): warning:  #1295-D: Deprecated declaration Servo_Init - give arg types
+  extern void Servo_Init();
+function.h(18): warning:  #1295-D: Deprecated declaration FindFire - give arg types
+  extern void FindFire();//发现火源
+function.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+PID.h(3): warning:  #1295-D: Deprecated declaration Up - give arg types
+  extern void Up();  //前进
+PID.h(4): warning:  #1295-D: Deprecated declaration Left - give arg types
+  extern void Left();//左转
+PID.h(5): warning:  #1295-D: Deprecated declaration Right - give arg types
+  extern void Right();//右转
+PID.h(6): warning:  #1295-D: Deprecated declaration Back - give arg types
+  extern void Back();   //调头
+PID.h(7): warning:  #1295-D: Deprecated declaration Stop - give arg types
+  extern void Stop();//停车
+PID.h(8): warning:  #1295-D: Deprecated declaration Add_speed - give arg types
+  extern void Add_speed(); //加速
+PID.h(9): warning:  #1295-D: Deprecated declaration Cut_speed - give arg types
+  extern void Cut_speed(); //减速
+PID.h(10): warning:  #1295-D: Deprecated declaration Diaotou - give arg types
+  extern void Diaotou();//调?              ^
+PID.h(11): warning:  #1295-D: Deprecated declaration Auto - give arg types
+  extern void Auto();   //自动模式
+PID.h(12): warning:  #1295-D: Deprecated declaration LeftM - give arg types
+  extern void LeftM();
+PID.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+PID.c(94): warning:  #1-D: last line of file ends without a newline
+  }
+PID.c: 28 warnings, 0 errors
+linking...
+Program Size: Code=4676 RO-data=336 RW-data=44 ZI-data=1836  
+FromELF: creating hex file...
+"..\OBJ\test.axf" - 0 Error(s), 28 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\松磊\Desktop\遥控灭火车\USER\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0
+
+<h2>Collection of Component Files used:</h2>
+Load "..\\OBJ\\test.axf" 
+Set JLink Project File to "C:\Users\松磊\Desktop\遥控灭火车\USER\JLinkSettings.ini"
+* JLink Info: Device "STM32F103RC" selected (256 KB flash, 48 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.91b, compiled Sep 15 2014 09:17:56
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20161228 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RC
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 4000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+</pre>
+</body>
+</html>
